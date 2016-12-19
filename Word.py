@@ -25,12 +25,11 @@ class Word:
 		# self.label = pyglet.text.Label(self.name,font_name='Times New Roman',font_size=36,x=self.xPos, y=self.yPos,anchor_x='center', anchor_y='bottom')
 		# self.label.draw()
 
-		for x in range(len(self.name)):
-			offset = x*self.fontSize
-			if x<self.currIndex:
-				pyglet.text.Label(self.name[x],font_name=self.font,font_size=self.fontSize+5,x=self.xPos+offset, y=self.yPos,anchor_x='center', anchor_y='bottom', bold=True).draw()
-			else:
-				pyglet.text.Label(self.name[x],font_name=self.font,font_size=self.fontSize,x=self.xPos+offset, y=self.yPos,anchor_x='center', anchor_y='bottom', bold=False).draw()
+		# for x in range(len(self.name)):
+		offset = 0#len(self.name)*self.fontSize
+		
+		pyglet.text.Label(self.name[:self.currIndex],font_name=self.font,font_size=self.fontSize+3,x=self.xPos, y=self.yPos,anchor_x='left', anchor_y='bottom', bold=True).draw()
+		pyglet.text.Label(self.name[self.currIndex:],font_name=self.font,font_size=self.fontSize,x=self.xPos+(self.currIndex*self.fontSize), y=self.yPos,anchor_x='left', anchor_y='bottom', bold=False).draw()
 
 	def updatePos(self, dt):
 		self.yPos += self.velocity*dt
