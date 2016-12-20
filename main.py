@@ -4,12 +4,12 @@ import pyglet
 import random
 from Word import Word
 
-# difficulty = input("difficulty:")
-# wpm = input("wpm:")
-# ngrams = input("ngrams:")
-difficulty = 5
-wpm = 50
-ngrams = 2
+difficulty = input("difficulty:")
+wpm = input("wpm:")
+ngrams = input("ngrams:")
+# difficulty = 5
+# wpm = 50
+# ngrams = 2
 
 
 window = pyglet.window.Window(800,600, caption = "Typing of the Dead Inside")
@@ -63,7 +63,7 @@ livesLabel = pyglet.text.Label(  ("      "+str(lives)+ "     ")   ,font_name="Co
 scoreLabel = pyglet.text.Label(  ("       "+str(score)+ "       ")   ,font_name="Courier New",font_size=18,x=window.width//2+280, y=killPoint-30,anchor_x='center', anchor_y='top', bold=True)
 
 
-gameEndLabel = pyglet.text.Label(  ("Game end, press any key to exit")   ,font_name="Courier New",font_size=28,x=window.width//2, y=window.height//2,anchor_x='center', anchor_y='center', bold=True)
+gameEndLabel = pyglet.text.Label(  ("Game end, press esc key to exit")   ,font_name="Courier New",font_size=28,x=window.width//2, y=window.height//2,anchor_x='center', anchor_y='center', bold=True)
 
 
 fps_display = pyglet.clock.ClockDisplay()
@@ -106,7 +106,7 @@ def on_text(text):
 		for w in words:
 			w.getLetter(text)
 	elif poppingDone:
-		exit()
+		# exit()
 		pass
 
 # Update here
@@ -134,7 +134,6 @@ def doChecks(dt):
 				if lives<=0:
 					gameEnd = True
 				words.pop(x)
-				global gameEnd
 				continue
 
 			w.checked = True
