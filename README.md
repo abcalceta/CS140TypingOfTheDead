@@ -13,4 +13,7 @@ Miguel Posadas
 # Code specifics
 
 Coded in Python utilizing Pyglet
-Program utilizes
+
+Game has 3 lives
+
+difficulty from 1-5, WPM and ngrams count are all implemented
