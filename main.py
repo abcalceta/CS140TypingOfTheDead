@@ -105,7 +105,7 @@ def on_text(text):
 		print text
 		for w in words:
 			w.getLetter(text)
-	else:
+	elif poppingDone:
 		exit()
 		pass
 
