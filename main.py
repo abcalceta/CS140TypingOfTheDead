@@ -4,19 +4,28 @@ import pyglet
 import random
 from Word import Word
 
+difficulty = input("difficulty:")
+wpm = input("wpm:")
+ngrams = input("ngrams:")
+
+
+
 window = pyglet.window.Window(800,600, caption = "Typing of the Dead Inside")
-stateList = []
 fps_display = pyglet.clock.ClockDisplay()
 pyglet.gl.glClearColor(0.2, 0.3, 0.5, 0)
 
 
 killPoint = window.height//4
 words = []
-wpm = 30
-numRange = 20
 spawnableRange = []
-difficulty = 3
-ngrams = 4
+numRange = 20
+
+# wpm = 100
+# difficulty = 3
+# ngrams = 4
+
+
+
 
 print "window width", window.width
 for x in range(numRange):
