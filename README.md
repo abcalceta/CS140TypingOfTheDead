@@ -10,7 +10,7 @@ https://drive.google.com/file/d/0B08-BvAcWqPHRHdRTGU1b0VVZkk/view?usp=sharing
 
 # Needs pyglet:
 
-''' pip install pyglet '''
+'''pip install pyglet'''
 
 # To run: 
 - put three files in same directory
@@ -18,8 +18,8 @@ https://drive.google.com/file/d/0B08-BvAcWqPHRHdRTGU1b0VVZkk/view?usp=sharing
 
 # Where are the threads?
 
-- ** Producer-Consumer (Word Generator and Word Display) **
-- ''' def spawnWord(dt) and pyglet.clock.schedule_interval(spawnWord, 60.0/wpm) '''
+- **Producer-Consumer (Word Generator and Word Display)**
+- '''def spawnWord(dt) and pyglet.clock.schedule_interval(spawnWord, 60.0/wpm)'''
 - spawnWord is called per time interval
 - spawnWord creates a new Word object
 - def on_draw()
