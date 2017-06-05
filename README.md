@@ -7,8 +7,7 @@
 - Rhea Limkinglam
 
 
-## Demo Video:
-# [Here it is!](https://drive.google.com/file/d/0B08-BvAcWqPHRHdRTGU1b0VVZkk/view?usp=sharing)
+# [Demo Video](https://drive.google.com/file/d/0B08-BvAcWqPHRHdRTGU1b0VVZkk/view?usp=sharing)
 
 
 ## To run: 
